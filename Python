@@ -1,0 +1,23 @@
+# 1.Assigning element to different list
+num1 = [5,4,3,2,1]
+num2 = [1,2,3,4,5]
+print(num1[0], num2[0])
+print(num1[-1], num2[-1])
+print(num1, num2)
+
+# 2.Accessing element from a tuple
+my_tuple =('p','e','r','m','i','t')
+print(my_tuple[0])
+print(my_tuple[5])
+
+# 3.Deleting different dictionary elements
+# Creating a dictionary
+myDict = {1: 'Delete', 2: 'items', 3: 'here'}
+delete = []
+for key , val in myDict.items():
+    if val == 'Delete':
+        delete.append(key)
+for i in delete:
+    del myDict[i]
+# Modified Dictionary
+print(myDict)
